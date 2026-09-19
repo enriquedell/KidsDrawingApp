@@ -15,24 +15,19 @@ class MainActivity : AppCompatActivity() {
 
         drawingView = findViewById(R.id.drawingView)
 
-        val clearButton: Button = findViewById(R.id.clearButton)
-        clearButton.setOnClickListener {
+        val btnClear: Button = findViewById(R.id.btnClear)
+        btnClear.setOnClickListener {
             drawingView.clearCanvas()
         }
 
-        val redButton: Button = findViewById(R.id.redButton)
-        redButton.setOnClickListener {
+        val btnRed: Button = findViewById(R.id.btnRed)
+        btnRed.setOnClickListener {
             drawingView.setColor(Color.RED)
         }
 
-        val blueButton: Button = findViewById(R.id.blueButton)
-        blueButton.setOnClickListener {
+        val btnBlue: Button = findViewById(R.id.btnBlue)
+        btnBlue.setOnClickListener {
             drawingView.setColor(Color.BLUE)
-        }
-
-        val blackButton: Button = findViewById(R.id.blackButton)
-        blackButton.setOnClickListener {
-            drawingView.setColor(Color.BLACK)
         }
     }
 }
